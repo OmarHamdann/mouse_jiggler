@@ -38,14 +38,14 @@ To stop the script, simply go back to your terminal and press Ctrl+C.
 Configuration
 You can easily customize the behavior of the script by editing the following variables at the top of the file:
 
-Interval: The number of seconds between each mouse movement (default is 300 seconds, or 5 minutes).
+interval: The number of seconds between each mouse movement (default is 300 seconds, or 5 minutes).
 
 distance: The number of pixels the mouse will move (default is 5 pixels).
 
-#You can adjust the interval (in seconds) between movements
+# You can adjust the interval (in seconds) between movements
 interval = 300
 
-#You can adjust the distance (in pixels) the mouse moves
+# You can adjust the distance (in pixels) the mouse moves
 distance = 5
 
 Disclaimer
