@@ -1,52 +1,69 @@
-Mouse Jiggler
-This is a simple Python script that simulates mouse movement to prevent your computer from going to sleep or your status on applications like Microsoft Teams from changing to "away."
 
-Features
-Lightweight: A simple script with minimal dependencies.
 
-Configurable: Easily adjust the time interval and mouse movement distance.
+## Mouse Jiggler
 
-Non-invasive: Moves the mouse just enough to trick the system without interrupting your work.
+This is a simple Python script that prevents your computer from going into sleep mode or changing your status to "Away" on applications like Microsoft Teams, Slack, or other communication platforms. It works by periodically moving the mouse a few pixels, simulating user activity.
 
-Prerequisites
-Before running the script, make sure you have the following installed:
+### Features
 
-Python 3.x: If you don't have it, you can download it from python.org.
+  * **Lightweight:** A minimal script that uses very little system resources.
+  * **Customizable:** Easily change the time interval and mouse movement distance to suit your needs.
+  * **Simple to use:** Requires only a single Python library to run.
 
-The pyautogui library.
+-----
 
-Installation
-Open your terminal or command prompt.
+## How to Install and Run
 
-Install the pyautogui library using pip:
+### Step 1: Install Python
 
+If you don't have Python installed, download it from the official website: [**python.org**](https://www.python.org/downloads/).
+
+During installation on Windows, make sure to check the box that says **"Add Python to PATH"** to make it easier to run the script from the command line.
+
+### Step 2: Install the `pyautogui` Library
+
+This script uses the `pyautogui` library to control the mouse. You can install it using `pip`, Python's package installer.
+Open your **Command Prompt** (on Windows) or **Terminal** (on macOS/Linux) and run the following command:
+
+```bash
 pip install pyautogui
+```
 
-Usage
-Save the script as mouse_jiggler.py.
+### Step 3: Run the Script
 
-Open your terminal or command prompt and navigate to the directory where you saved the file.
+1.  Save the provided code in a file named `mouse_jiggler.py`.
+2.  Open your Command Prompt or Terminal.
+3.  Navigate to the directory where you saved the file. For example, if you saved it on your Desktop, type `cd Desktop`.
+4.  Execute the script with this command:
 
-Run the script using the following command:
+<!-- end list -->
 
+```bash
 python mouse_jiggler.py
+```
 
-The script will start running and you will see the message: "Mouse Jiggler script is running. Press Ctrl+C to stop."
+The script will now be running. It will move your mouse every 5 minutes by default. You can see the script is active in the terminal.
 
-To stop the script, simply go back to your terminal and press Ctrl+C.
+-----
 
-Configuration
-You can easily customize the behavior of the script by editing the following variables at the top of the file:
+## How to Stop the Script
 
-interval: The number of seconds between each mouse movement (default is 300 seconds, or 5 minutes).
+To stop the script at any time, go back to the terminal window and press **`Ctrl+C`**.
 
-distance: The number of pixels the mouse will move (default is 5 pixels).
+-----
 
-# You can adjust the interval (in seconds) between movements
-interval = 300
+## Customization
 
-# You can adjust the distance (in pixels) the mouse moves
-distance = 5
+You can easily adjust the script to change the movement frequency or distance. Open the `mouse_jiggler.py` file in a text editor and modify the following two variables at the top of the file:
 
-Disclaimer
+  * **`interval`**: The time in seconds between each mouse movement. The default is `300` (5 minutes).
+  * **`distance`**: The number of pixels the mouse will move. The default is `5`.
+
+For example, to make the mouse move every minute, change the `interval` to `60`:
+
+```python
+interval = 60  # 1 minute
+```
+
+## Disclaimer
 This script is provided for personal use.
